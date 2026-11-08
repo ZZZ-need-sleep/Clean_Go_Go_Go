@@ -1,0 +1,38 @@
+﻿文件清理 自检报告
+版本: 1.0.0
+数据目录: E:\APP\DeepSeek-harness\工作区\文件清理\build\selftest_ext
+[PASS] 允许的文件名 Genshin.exe
+[PASS] 允许的文件名 YuanShen.EXE
+[PASS] 允许的文件名 LXOZVQE.exe
+[PASS] 拒绝未授权文件名
+[PASS] 办公文件后缀识别
+[PASS] 系统保护后缀识别
+[PASS] 路径前缀匹配
+[PASS] 路径边界匹配
+[PASS] Windows 系统文件保护
+[PASS] 普通文档不误判
+[PASS] 周清理分界为周日 00:00
+[PASS] 清理分界严格早于一周
+[PASS] 默认后缀保护包含 bat/json/ini/xml
+[PASS] data.xzq 保存
+[PASS] data.xzq 存在
+[PASS] data.xzq 非空
+[PASS] data.xzq 重新读取
+[PASS] 记录数量回读一致
+[PASS] 快速扫描目录回读一致
+[PASS] 保护区目录回读一致
+[PASS] 后缀保护列表回读一致
+[PASS] 扫描统计回读一致
+[PASS] 未完成扫描标记回读一致
+[PASS] 保护区统计正确
+[PASS] 后缀保护统计正确
+[PASS] 办公文件标记回读一致
+[PASS] 保护区文件标记回读一致
+[PASS] 后缀保护文件标记回读一致
+[PASS] run_find.xzq 创建
+[PASS] run_find.xzq 实时写入
+[PASS] run_find.xzq 关闭
+[PASS] run_find.xzq 非空
+
+RESULT: PASS
+日志: E:\APP\DeepSeek-harness\工作区\文件清理\build\selftest_ext\selftest.log

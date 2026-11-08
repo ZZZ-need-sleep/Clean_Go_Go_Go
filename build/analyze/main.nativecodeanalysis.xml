@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>E:\APP\DeepSeek-harness\工作区\文件清理\src\</FILEPATH>
+      <FILENAME>main.c</FILENAME>
+      <LINE>477</LINE>
+      <COLUMN>11</COLUMN>
+    </SFA>
+    <DEFECTCODE>28251</DEFECTCODE>
+    <DESCRIPTION>“wWinMain”的批注不一致: 此实例包含 无批注。请参见 c:\program files (x86)\windows kits\10\include\10.0.26100.0\um\winbase.h(1075)。</DESCRIPTION>
+    <FUNCTION>wWinMain</FUNCTION>
+    <DECORATED>wWinMain</DECORATED>
+    <FUNCLINE>477</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+</DEFECTS>

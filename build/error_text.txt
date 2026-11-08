@@ -1,0 +1,4 @@
+TITLE: 文件清理 - 异常报错
+'Button' '确定'
+'Static' ''
+'Static' '异常报错：扫描数据文件损坏或版本不兼容：E:\\APP\\DeepSeek-harness\\工作区\\文件清理\\build\\corrupt_data\\data.xzq\n请将此报错信息反馈至开发者3814859587@qq.com'

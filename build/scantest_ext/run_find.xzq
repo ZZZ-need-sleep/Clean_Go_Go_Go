@@ -1,0 +1,25 @@
+﻿# 文件清理 - 实时扫描记录
+# 开始时间: 2026-11-01 09:13:16
+# 字段: 完整路径	后缀	大小(字节)	修改时间	状态
+E:\APP\DeepSeek-harness\工作区\文件清理\tests\fixture\保护区\机密.docx	docx	700	2026-05-01 07:00	可清理
+E:\APP\DeepSeek-harness\工作区\文件清理\tests\fixture\办公\年度报告.docx	docx	1200	2026-08-01 10:00	可清理
+E:\APP\DeepSeek-harness\工作区\文件清理\tests\fixture\办公\新文件.docx	docx	300	2026-10-30 18:00	可清理
+E:\APP\DeepSeek-harness\工作区\文件清理\tests\fixture\办公\预算表.xlsx	xlsx	2400	2026-08-15 12:30	可清理
+E:\APP\DeepSeek-harness\工作区\文件清理\tests\fixture\图片\照片.jpg	jpg	5000	2026-09-01 09:00	可清理
+E:\APP\DeepSeek-harness\工作区\文件清理\tests\fixture\嵌套\深层\旧合同.pdf	pdf	1800	2026-06-01 08:00	可清理
+E:\APP\DeepSeek-harness\工作区\文件清理\tests\fixture\嵌套\深层\笔记.txt	txt	50	2026-10-31 12:00	可清理
+E:\APP\DeepSeek-harness\工作区\文件清理\tests\fixture\应用\config.ini	ini	6	2026-08-21 10:00	后缀保护
+E:\APP\DeepSeek-harness\工作区\文件清理\tests\fixture\应用\run.bat	bat	10	2026-08-20 10:00	后缀保护
+E:\APP\DeepSeek-harness\工作区\文件清理\tests\fixture\应用\settings.json	json	7	2026-08-22 10:00	后缀保护
+E:\APP\DeepSeek-harness\工作区\文件清理\tests\fixture\数据\access.log	log	400	2026-09-10 10:00	后缀保护
+E:\APP\DeepSeek-harness\工作区\文件清理\tests\fixture\数据\config.xml	xml	4	2026-09-12 10:00	后缀保护
+E:\APP\DeepSeek-harness\工作区\文件清理\tests\fixture\数据\firmware.bin	bin	1024	2026-09-11 10:00	后缀保护
+E:\APP\DeepSeek-harness\工作区\文件清理\tests\fixture\系统组件\demo.dll	dll	8000	2026-07-01 01:00	系统保护
+E:\APP\DeepSeek-harness\工作区\文件清理\tests\fixture\系统组件\readme.txt	txt	100	2026-10-20 20:00	可清理
+# 结束时间: 2026-11-01 09:13:16
+# 扫描状态: 完成
+# 耗时(秒): 0
+# 记录行数: 15
+# 总计扫描文件: 15
+# 系统保护未显示: 1
+# 跳过目录: 0

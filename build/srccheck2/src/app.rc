@@ -1,0 +1,69 @@
+#include <windows.h>
+#include "resource.h"
+
+IDI_APP ICON "app.ico"
+
+1 24 "app.manifest"
+
+IDD_SCAN_MODE DIALOGEX 0, 0, 390, 300
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Scan mode"
+FONT 9, "Microsoft YaHei UI"
+BEGIN
+    LTEXT           "Intro", IDC_SCAN_INTRO, 16, 12, 358, 34
+    CONTROL         "Quick", IDC_RADIO_QUICK, "BUTTON", BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP, 16, 54, 358, 16
+    LTEXT           "QuickDesc", IDC_QUICK_DESC, 32, 74, 340, 28
+    CONTROL         "Full", IDC_RADIO_FULL, "BUTTON", BS_AUTORADIOBUTTON | WS_TABSTOP, 16, 110, 358, 16
+    LTEXT           "FullDesc", IDC_FULL_DESC, 32, 130, 340, 28
+    CONTROL         "Dir", IDC_RADIO_DIR, "BUTTON", BS_AUTORADIOBUTTON | WS_TABSTOP, 16, 166, 358, 16
+    LTEXT           "DirDesc", IDC_DIR_DESC, 32, 186, 340, 28
+    DEFPUSHBUTTON   "OK", IDOK, 178, 252, 90, 30
+    PUSHBUTTON      "Cancel", IDCANCEL, 278, 252, 90, 30
+END
+
+IDD_PROTECT DIALOGEX 0, 0, 430, 320
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Protection"
+FONT 9, "Microsoft YaHei UI"
+BEGIN
+    LTEXT           "Info", IDC_PROT_INFO, 16, 12, 398, 36
+    LISTBOX         IDC_PROT_LIST, 16, 52, 398, 166, LBS_NOINTEGRALHEIGHT | LBS_NOTIFY | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Add", IDC_PROT_ADD, 16, 228, 120, 32
+    PUSHBUTTON      "Remove", IDC_PROT_REMOVE, 144, 228, 120, 32
+    DEFPUSHBUTTON   "Close", IDCANCEL, 314, 228, 100, 32
+    LTEXT           "Foot", IDC_PROT_FOOT, 16, 272, 398, 34
+END
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,0
+ PRODUCTVERSION 1,0,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName", "File Cleaner contributors"
+            VALUE "FileDescription", "File Cleaner"
+            VALUE "FileVersion", "1.0.0.0"
+            VALUE "InternalName", "Genshin"
+            VALUE "LegalCopyright", "Copyright (C) 2026 File Cleaner contributors"
+            VALUE "OriginalFilename", "Genshin.exe"
+            VALUE "ProductName", "File Cleaner"
+            VALUE "ProductVersion", "1.0.0.0"
+            VALUE "Comments", "Native standalone file scanning utility"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END

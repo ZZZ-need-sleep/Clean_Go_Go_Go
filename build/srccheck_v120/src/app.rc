@@ -1,0 +1,100 @@
+#include <windows.h>
+#include "resource.h"
+
+IDI_APP ICON "app.ico"
+
+1 24 "app.manifest"
+
+IDD_SCAN_MODE DIALOGEX 0, 0, 390, 300
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Scan mode"
+FONT 9, "Microsoft YaHei UI"
+BEGIN
+    LTEXT           "Intro", IDC_SCAN_INTRO, 16, 12, 358, 34
+    CONTROL         "Quick", IDC_RADIO_QUICK, "BUTTON", BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP, 16, 54, 358, 16
+    LTEXT           "QuickDesc", IDC_QUICK_DESC, 32, 74, 340, 28
+    CONTROL         "Full", IDC_RADIO_FULL, "BUTTON", BS_AUTORADIOBUTTON | WS_TABSTOP, 16, 110, 358, 16
+    LTEXT           "FullDesc", IDC_FULL_DESC, 32, 130, 340, 28
+    CONTROL         "Dir", IDC_RADIO_DIR, "BUTTON", BS_AUTORADIOBUTTON | WS_TABSTOP, 16, 166, 358, 16
+    LTEXT           "DirDesc", IDC_DIR_DESC, 32, 186, 340, 28
+    DEFPUSHBUTTON   "OK", IDOK, 178, 252, 90, 30
+    PUSHBUTTON      "Cancel", IDCANCEL, 278, 252, 90, 30
+END
+
+IDD_PROTECT DIALOGEX 0, 0, 430, 320
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Protection"
+FONT 9, "Microsoft YaHei UI"
+BEGIN
+    LTEXT           "Info", IDC_PROT_INFO, 16, 12, 398, 36
+    LISTBOX         IDC_PROT_LIST, 16, 52, 398, 166, LBS_NOINTEGRALHEIGHT | LBS_NOTIFY | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Add", IDC_PROT_ADD, 16, 228, 120, 32
+    PUSHBUTTON      "Remove", IDC_PROT_REMOVE, 144, 228, 120, 32
+    DEFPUSHBUTTON   "Close", IDCANCEL, 314, 228, 100, 32
+    LTEXT           "Foot", IDC_PROT_FOOT, 16, 272, 398, 34
+END
+
+IDD_EXT_DELETE DIALOGEX 0, 0, 520, 400
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Delete by extension"
+FONT 9, "Microsoft YaHei UI"
+BEGIN
+    LTEXT           "Intro", IDC_EXTDEL_INTRO, 16, 12, 488, 28
+    EDITTEXT        IDC_EXTDEL_EDIT, 16, 44, 360, 30, ES_AUTOHSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Search", IDC_EXTDEL_SEARCH, 386, 43, 118, 32
+    LTEXT           "Hint", IDC_EXTDEL_HINT, 16, 78, 488, 18
+    LISTBOX         IDC_EXTDEL_LIST, 16, 100, 488, 170, LBS_EXTENDEDSEL | LBS_NOINTEGRALHEIGHT | LBS_NOTIFY | WS_VSCROLL | WS_HSCROLL | WS_TABSTOP
+    LTEXT           "Info", IDC_EXTDEL_INFO, 16, 274, 488, 20
+    PUSHBUTTON      "Select all", IDC_EXTDEL_SELECTALL, 16, 302, 100, 34
+    PUSHBUTTON      "Delete selected", IDC_EXTDEL_DELETE, 124, 302, 170, 34
+    DEFPUSHBUTTON   "Close", IDCANCEL, 404, 302, 100, 34
+    LTEXT           "Foot", IDC_EXTDEL_FOOT, 16, 344, 488, 44
+END
+
+IDD_EXT_PROTECT DIALOGEX 0, 0, 440, 330
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Extension protection"
+FONT 9, "Microsoft YaHei UI"
+BEGIN
+    LTEXT           "Info", IDC_EXT_INFO, 16, 12, 408, 30
+    LISTBOX         IDC_EXT_LIST, 16, 46, 408, 154, LBS_NOINTEGRALHEIGHT | LBS_NOTIFY | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EXT_EDIT, 16, 210, 200, 30, ES_AUTOHSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "Add", IDC_EXT_ADD, 224, 210, 92, 32
+    PUSHBUTTON      "Remove", IDC_EXT_REMOVE, 324, 210, 100, 32
+    LTEXT           "Foot", IDC_EXT_FOOT, 16, 256, 292, 54
+    PUSHBUTTON      "Close", IDCANCEL, 324, 260, 100, 32
+END
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,2,0,0
+ PRODUCTVERSION 1,2,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName", "File Cleaner contributors"
+            VALUE "FileDescription", "File Cleaner"
+            VALUE "FileVersion", "1.2.0.0"
+            VALUE "InternalName", "Genshin"
+            VALUE "LegalCopyright", "Copyright (C) 2026 File Cleaner contributors"
+            VALUE "OriginalFilename", "Genshin.exe"
+            VALUE "ProductName", "File Cleaner"
+            VALUE "ProductVersion", "1.2.0.0"
+            VALUE "Comments", "Native standalone file scanning utility"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END

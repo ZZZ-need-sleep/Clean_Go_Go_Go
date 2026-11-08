@@ -1,0 +1,13 @@
+﻿文件清理 扫描测试
+扫描目录: tests\fixture
+扫描返回码: 0
+错误信息: (无)
+总计扫描: 15
+可清理: 8
+保护区: 0
+后缀保护: 6
+系统保护: 1
+跳过目录: 0
+数据文件: E:\APP\DeepSeek-harness\工作区\文件清理\build\scantest_v110\data.xzq (2291 字节)
+实时记录: E:\APP\DeepSeek-harness\工作区\文件清理\build\scantest_v110\run_find.xzq (2163 字节)
+RESULT: PASS
